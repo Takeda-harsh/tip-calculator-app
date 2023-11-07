@@ -35,28 +35,52 @@
 </div>
  
 <div class="tips-div">
-  Select Tip %
-  <div class="grid">
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <p>Select Tip %</p>
+  <div class="grid-container">
+  <div class="grid-item">5%</div>
+  <div class="grid-item">10%</div>
+  <div class="grid-item">15%</div>
+  <div class="grid-item">25%</div>
+  <div class="grid-item"> 50%</div>
+  <input type="text" placeholder="Custom" class="grid-item" id="custom-tip">
+  
+  
+ 
+  
   </div>
   
 </div>
  
+<div class="number-of-people">
+  <p>Number of People</p>
+  <div class="bill-input">
+    <div class="dollar-div">
+      <img src="./images/icon-person.svg" class="dollar-icon">
+    </div>
+    <input type="text" id="noofpeople">
+  </div>
+</div>
 
-  Number of People
+<div class="display-tip">
+<div class="per-person-display">
+  <p><span id="size">Tip Amount</span><br>
+  <span class="person-text">/ person</span></p>
 
-  Tip Amount
-  / person
+<div class="per-person-display" id="tip-amount"></div>
+</div>
+  
 
-  Total
-  / person
+<div class="per-person-display">
+  <p><span id="size">Total</span><br>
+    <span class="person-text">/ person</span></p>
+  <div class="per-person-display" id="total-amount"></div>
+</div>
+  
 
-  Reset
+  <button class="reset-btn">RESET</button>
+</div>
+
+ 
 
 </div>
   
@@ -64,5 +88,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
